@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>API document</title>
+	</head>
+
+	<body>
+		<h1>url: https://practice-rest.herokuapp.com/</h1>
+		<table border="1">
+			<tr>
+				<td>url</td>
+				<td>method</td>
+				<td>function</td>
+				<td>input</td>
+				<td>output</td>
+			</tr>
+
+			<tr>
+				<td>connect/</td>
+				<td>GET</td>
+				<td>db에 있는 모든 메모 가져오기</td>
+				<td>None</td>
+				<td>[['content': '<메모 내용>']]</td>
+			</tr>
+
+			<tr>
+				<td>connect/</td>
+				<td>POST</td>
+				<td>새 메모 데이터 생성</td>
+				<td>['content': '<메모 내용>']</td>
+				<td>None</td>
+			</tr>
+
+			<tr>
+				<td>connect/&lt;int:pk&gt;/</td>
+				<td>GET</td>
+				<td>pk에 해당하는 메모 가져오기</td>
+				<td>None</td>
+				<td>['content': '<메모 내용>']</td>
+			</tr>
+
+			<tr>
+				<td>connect/&lt;int:pk&gt;/</td>
+				<td>PUT</td>
+				<td>pk에 해당하는 메모 수정하기</td>
+				<td>['content': '<수정할 메모 내용>']</td>
+				<td>None</td>
+			</tr>
+
+			<tr>
+				<td>connect/&lt;int:pk&gt;/</td>
+				<td>DELETE</td>
+				<td>pk에 해당하는 메모 삭제</td>
+				<td>None</td>
+				<td>None</td>
+			</tr>
+		</table>
+	</body>
+</html>

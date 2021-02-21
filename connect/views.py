@@ -9,3 +9,6 @@ class MemoView( viewsets.ModelViewSet ):
 	serializer_class = MemoSerializer
 	permission_classes = (permissions.AllowAny,)
 		
+
+def document_api(request):
+	return render(request, 'document_api.html')
